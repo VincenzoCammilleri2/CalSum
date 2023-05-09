@@ -11,9 +11,9 @@
         <link href="static/css/style.css" rel="stylesheet" />
     </head>
 
-    <body style="background-color: azure; margin: 0px;">
+    <body style="background-image: linear-gradient(to right, azure ,rgb(201, 219, 185) ); margin: 0px;">
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg" style="background-color:rgb(124, 160, 160); font-weight: bold; font-family:Georgia, 'Times New Roman', Times, serif; padding: 0px; margin-bottom: 0px;">
+        <nav class="navbar navbar-expand-lg" style="background-image: linear-gradient(to right, azure ,rgb(201, 219, 185) ); font-weight: bold; font-family:Georgia, 'Times New Roman', Times, serif; padding: 0px; margin-bottom: 0px;">
             <img class="mb-4" class="img" src="/static/images/CalSumLogo.jpg" alt="CalSumLogo" style="background-position: left; background-size: cover; margin-right: 0px;"/>
             <div class="container">
                 
@@ -24,7 +24,6 @@
                         <li class="nav-item"><a class="nav-link" href="learn">Learn More</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Account</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,13 +62,13 @@
                     </article>
                     
                     <section class="mb-5">
-                        <div class="card" style="background-color:rgb(124, 160, 160); font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; border-radius: 0%;">
+                        <div class="card" style="background-image: linear-gradient(to left, azure ,rgb(201, 219, 185) ); border: 3px solid; border-color:black; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; border-radius: 0%;">
                             <div class="card-body" style="box-shadow: 3px 3px 3px rgb(56, 76, 76)">
                                 
                                     <form>
                                         <table id="calc" class="table">
                                             <div style="margin:auto; width: 400px;">
-                                                <h5 class="resultsTitle" style="background-color: rgb(128, 156, 156); margin: 20px; border: 5px solid; border-color:rgb(71, 96, 96); border-radius: 6px; box-shadow: 0 7px 7px rgb(56, 76, 76); padding: 8px; text-shadow: 1px 0px 0px black;">Let's see how many calories you need to reach your daily intake!</h5>
+                                                <h5 class="resultsTitle" style="background-image: linear-gradient(to right, azure ,rgb(201, 219, 185) ); border: 3px solid; border-color:black; border-radius: 6px; box-shadow: 0 7px 7px rgb(56, 76, 76); padding: 8px; text-shadow: 1px 0px 0px black;">Let's see how many calories you need to reach your daily intake!</h5>
                                             </div>
                                             <tr>
                                                 <td>Your Name</td>
@@ -80,8 +79,8 @@
                                             <tr>
                                                 <td>Choose Your Gender</td>
                                                 <td>
-                                                    <input id="maleRadButton" type="radio" value="male">Male
-                                                    <input id="femaleRadButton" type="radio" value="male">Female
+                                                    <input id="maleRadButton" name="rad1" type="radio" value="male">Male
+                                                    <input id="femaleRadButton" name="rad1" type="radio" value="male">Female
                                                     <!--<input id="nonbinRadButton" type="radio" value="male">Non-Binary-->
                                                 </td>
                                                 <td></td>
@@ -125,29 +124,29 @@
                                     
                                 
                                 
-                                    <button id="btn" type="submit" onclick="calculateResults()" class="button"
-                                    style="width: 350px; background-color:rgb(128, 156, 156) ; border: 3px solid; border-color: rgb(71, 96, 96); border-radius: 50px; box-shadow: 0 3px 3px rgb(56, 76, 76); text-shadow: 1px 0px 0px black;">Let's Calculate it!</button>
+                                    <button id="btn" type="submit" class="button" onclick="calculateResults()"
+                                    style="width: 350px; background-image: linear-gradient(to left, azure ,rgb(201, 219, 185) ); border: 3px solid; border-color:black; border-radius: 50px; box-shadow: 0 3px 3px black; text-shadow: 1px 0px 0px black;">Let's Calculate it!</button>
                                 
                             </div>
                         </div>
                     </section>
 
                     <section class="mb-5">
-                        <div class="card" style="background-color:rgb(124, 160, 160); font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; border-radius: 0%;">
-                            <div class="card-body" style="box-shadow: 3px 3px 3px rgb(56, 76, 76)">
+                        <div class="card" style="background-image: linear-gradient(to left, azure ,rgb(201, 219, 185) ); border: 3px solid; border-color:black; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; border-radius: 0%;">
+                            <div class="card-body" style="box-shadow: 3px 3px 3px black">
                                 
                                     <form>
                                         <table id="result" class="table">
 
                                             <div style="margin:auto; width: 400px;">
-                                                <h5 class="resultsTitle" style="background-color: rgb(128, 156, 156); margin: 20px; border: 5px solid; border-color:rgb(71, 96, 96); border-radius: 6px; box-shadow: 0 7px 7px rgb(56, 76, 76); padding: 20px; text-shadow: 1px 0px 0px black;">Let's Look At Your Results!</h5>
+                                                <h5 class="resultsTitle" style="background-image: linear-gradient(to left, azure ,rgb(201, 219, 185) ); border: 3px solid; border-color:black; border-color:black; border-radius: 6px; box-shadow: 0 7px 7px black; padding: 20px; text-shadow: 1px 0px 0px black;"><strong>! NOTE !</strong></h5>
                                             </div>
 
                                         <tr>
                                             <td>
-                                                <h4><strong>!NOTE!</strong></h4>
+                                                <h4></h4>
                                                 <p>
-                                                 The following results are <strong>NOT</strong> backed by any medical professionals, so please make sure to contact and speak with your medical provider before committing to any new diet changes or restrictions!
+                                                 The following obtained results are <strong>NOT</strong> backed by any medical professionals, so please make sure to contact and speak with your medical provider before committing to any new diet changes or restrictions!
                                                 </p>
                                             </td>
                                             
@@ -155,18 +154,11 @@
 
                                         <tr>
                                             <td>
-                                            <h6 style="font-size: large;">If you wish to <strong><u>MAINTAIN</u></strong> your current weight...</h6>
+                                            <h6><strong>Thank You!</strong></h6>
                                             </td>
                                             
                                         </tr>
 
-                                        <tr>
-                                            <td>
-                                            <h6 style="font-size: large;">If you wish to <strong><u>LOSE WEIGHT</u></strong>...</h6>
-                                            </td>
-                                            
-                                        </tr>
-                                        
 
                                     </form>
                                     
@@ -191,7 +183,7 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="/static/js/scripts.js"></script>
         
     </body>
 </html>
