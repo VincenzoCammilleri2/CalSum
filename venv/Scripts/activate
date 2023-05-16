@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\frank\OneDrive\Desktop\CalorieCounter_CTP\venv"
+VIRTUAL_ENV="C:\Users\frank\CalSum\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

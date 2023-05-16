@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'CalorieCalc',
     'bootstrap5',
-    'CalorieCalc.apps.CaloriecalcConfig',
+    # 'CalorieCalc.apps.CaloriecalcConfig',
 ]
 
 MIDDLEWARE = [
