@@ -11,42 +11,38 @@
   <link href="static/css/style.css" rel="stylesheet" />
 </head>
 
-<body style="background-image: linear-gradient(to right, azure ,rgb(201, 219, 185) );">
-  <nav class="navbar navbar-expand-lg" style="background-image: linear-gradient(to right, azure ,rgb(201, 219, 185) ); font-weight: bold; font-family:Georgia, 'Times New Roman', Times, serif; padding: 0px; margin-bottom: 0px;">
-    <img class="mb-4" class="img" src="/static/images/CalSumLogo.jpg" alt="CalSumLogo" style="background-position: left; background-size: cover; margin-right: 0px;"/>
-    <div class="container">
+<body style="width:100%; background-image: linear-gradient(rgb(86, 0, 86),white);">
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg" style="font-weight: bold; font-family:Georgia, 'Times New Roman', Times, serif; padding: 0px; margin-bottom: 0px;">
         
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 0px; animation: pulse 2s infinite;"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 0%;">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="learn">Learn More</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">About</a></li>
-            </ul>
+        <img class="mb-4" class="img" src="/static/images/CalSum.png" alt="CalSumLogo" style="background-position: left; background-size:contain; width: 300px; height: 100px; margin-left: 50px; margin-top: 10px;"/>
+        <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 0px; animation: pulse 2s infinite;"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 0%;">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="learn">Learn More</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login">Account</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 <!-- Page content-->
 <div class="container mt-5">
     <div class="row">
         <div class="col-lg-12">
+          
           <section class="mb-5">
-            <div class="card" style="background-image: linear-gradient(to left, azure ,rgb(201, 219, 185) );  font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; border-radius: 0%;">
-                <div class="card-body" style="box-shadow: 3px 3px 3px rgb(56, 76, 76)">
+            <div class="card" style="background-color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
+                <div class="card-body" style="box-shadow: 5px 5px 5px rgb(86, 0, 86);">
                     
                         <form>
                             <table id="calc" class="table">
-                              <tr>
-                                <h4><strong>! Reminder !</strong></h4>
-                                <p>
-                                 The following results are <strong>NOT</strong> backed by any medical professionals, so please make sure to contact and speak with your medical provider before committing to any new diet changes or restrictions!
-                                </p>
-                            
-                              </tr>
                               
                                 <div style="margin:auto; width: 400px;">
-                                    <h5 class="resultsTitle" style="background-color: rgb(128, 156, 156); margin: 20px; border: 5px solid; border-color:rgb(71, 96, 96); border-radius: 6px; box-shadow: 0 7px 7px rgb(56, 76, 76); padding: 8px; text-shadow: 1px 0px 0px black;">Let's learn more about...</h5>
+                                    <h5 class="resultsTitle" style="background-color:#dfe4ea; box-shadow: 0 7px 7px #57606f; padding: 8px; text-shadow: 1px 0px 0px black;">Let's learn more about...</h5>
                                 </div>
                                 <tr>
                                   
@@ -77,4 +73,45 @@
                                 </td>
                                 
                             </tr>
+                            </table>
+                        </form>
+                </div>
+            </div>
+          </section>
+          <section class="mb-5">
+            <div class="card" style="background-color:#dfe6e9;font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; border-radius: 0%;">
+                <div class="card-body" style="box-shadow: 5px 5px 5px rgb(86, 0, 86);">
+                    
+                        <form>
+                            <table id="result" class="table">
+
+                                <div style="margin:auto; width: 400px;">
+                                    <h5 class="resultsTitle" style="background-color: #dfe4ea; box-shadow: 0 7px 7px red; padding: 20px; "><strong>! REMEMBER !</strong></h5>
+                                </div>
+
+                            <tr>
+                                <td>
+                                    <h4></h4>
+                                    <p>
+                                      The following results are <strong>NOT</strong> backed by any medical professionals, so please make sure to contact and speak with your medical provider before committing to any new diet changes or restrictions!
+                                     </p>
+                                </td>
+                                
+                            </tr>
+
+                            <tr>
+                                <td>
+                                <h6><strong>Thank You!</strong></h6>
+                                </td>
+                                
+                            </tr>
+
+
+                        </form>
+                        
+                    </table>
+                    
+                </div>
+            </div>
+        </section>
                             

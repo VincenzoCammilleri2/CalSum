@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-# class UserAccountInfo(models.model){
+#class UserAccountInfo(models.model){
+    
 
 # }
