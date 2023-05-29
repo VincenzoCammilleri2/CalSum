@@ -9,30 +9,36 @@
         <title>Welcome to CalSum!</title>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="static/css/style.css" rel="stylesheet" />
+        <link href="static/css/style2.css" rel="stylesheet" />
+
     </head>
 
     <body class="homePage" style="width:100%; height:100vh; background-image: linear-gradient(rgb(86, 0, 86),white); position: relative; padding: 0 5%; display: flex; align-items: center; justify-content: center;">
         <!-- Responsive navbar-->
         
         <div>
-            <img class="mb-4" class="img" src="/static/images/CalSum.png" alt="CalSumLogo" style=" width: 600px; height: 300px; position: relative; align-items: center; "/>
+            <img id="animate-homepage-logo" class="mb-4" class="img" src="/static/images/CalSum.png" alt="CalSumLogo" style=" width: 600px; height: 300px; position: relative; align-items: center; "/>
             <nav class="navbar navbar-expand-lg" style="position: relative; align-items: center; padding-bottom: 10%;">
             
                 <div class="container" style=" width:auto; position: relative; align-items: center;">
                     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 0px; animation: pulse 2s infinite;"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="position: relative; margin: auto; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger;">
+                        <ul id="animate-homepage-nav-link" class="navbar-nav ms-auto mb-2 mb-lg-0" style="position: relative; margin: auto; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger;">
                             <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="learn">Learn More</a></li>
                             <li class="nav-item"><a class="nav-link" href="login">Account</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contactPage">About Me</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
-            <button id="directTo-calc" style="position: relative; padding: 0 5%; display: flex; align-items: center; justify-content: center; margin: auto;">Calculator</button>
+            <h4 id="animate-homepage-message" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; position: relative; margin-bottom: 20px;">Want to find out your caloric intake to maintain, gain, or lose weight?</h4>
+            <h5 id="animate-homepage-message" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; position: relative;margin-bottom: 40px;">Click the button below to find out!</h5>
+
+
+            <button id="directTo-calc">Calculator</button>
             
         </div>
 

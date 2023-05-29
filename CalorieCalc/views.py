@@ -17,3 +17,6 @@ def loginPage(request):
 def calculatorPage(request):
     return render(request,'calculatorPage.html')
 
+def contactPage(request):
+    return render(request,'contactPage.html')
+

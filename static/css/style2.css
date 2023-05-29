@@ -1,0 +1,114 @@
+#directTo-calc{
+  position: relative; 
+  padding: 0 5%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  margin: auto; 
+  border-radius: 5px; 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  display:flex; 
+  padding: 4px 40px;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(195, 159, 195);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  overflow: hidden;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+#directTo-calc::before{
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(rgba(255, 255, 255, 0.2),  rgb(195, 159, 195));
+  filter: blur(20px);
+  z-index: -1;
+  transition: background-color 0.3s ease;
+}
+
+#directTo-calc::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgb(195, 159, 195) 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;}
+
+#directTo-calc:hover::before{
+  background-color: rgba(255, 255, 255, 0.1);}
+
+#directTo-calc:hover::after{
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#animate-homepage-message {
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+#animate-homepage-logo{
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+#animate-homepage-nav-link{
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+#animate-homepage-nav-link{
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+#learn{
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.learnMore{
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+#remember-learnMore{
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.resultsTitle{
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+#login{
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.form-group{
+  animation: fadeIn 2.8s ease-in-out;
+}
+
+#login-button{
+  animation: fadeIn 3s ease-in-out;
+}
+
+#aboutMe{
+  animation: fadeIn 3s ease-in-out; 
+}
+
