@@ -235,8 +235,16 @@
               let exerciseOptionACTIVE = document.getElementById("active").value;
               let exerciseOptionVERYACTICE = document.getElementById("veryActive").value;
 
+              if(male == null || female == null || age == null || height == null || weight == null || exerciseOptionACTIVE == null || exerciseOptionBMR == null || exerciseOptionLIGHTLYACTIVE == null || exerciseOptionVERYACTICE == null){
+                result += "<h4>Sorry " + yourName + ",</h4>";
+                result += "<p>You must have missed something or left something out above. " + maleBMR + "</p>";
+                result += "<p>Please go back above and review your input. " + maleBMR + "</p>";
+                result += "<p>Once everything is filled in, please recalculate. " + maleBMR + "</p>";
+              }else{
       
-              let bmr, maleBMR, femaleBMR= 0;
+                let maleBMR, femaleBMR= 0;
+
+              
               
                 if (male) {
                     maleBMR = 66.47 + 6.24 * weight + 12.7 * height - 6.75 * age;
@@ -246,17 +254,17 @@
                         result += "<p>Your MAINTENANCE calories would be... " + maleBMR + "</p>";
                         result += "<p>If you are trying to GAIN weight, then your total calories would be... " + (maleBMR + 500) + "</p>";
                         result += "<p>If you are trying to LOSE weight, then your total calories would be... " + (maleBMR - 300) + "-" + (maleBMR - 250) + "</p>";
-                    }else if(exerciseOptionLIGHTLYACTIVE){
+                    }else if(exerciseOptionLIGHTLYACTIVE && (!exerciseOptionACTIVE || !exerciseOptionBMR || !exerciseOptionVERYACTICE) ){
                         result += "<h4>Hey " + yourName + ",</h4>";
                         result += "<p>Your MAINTENANCE calories would be... " + maleBMR + "</p>";
                         result += "<p>If you are trying to GAIN weight, then your total calories would be... " + (maleBMR + 500) + "</p>";
                         result += "<p>If you are trying to LOSE weight, then your total calories would be... " + (maleBMR - 600) + "-" + (maleBMR - 275) + "</p>";
-                    }else if(exerciseOptionACTIVE){
+                    }else if(exerciseOptionACTIVE && (!exerciseOptionLIGHTLYACTIVE || !exerciseOptionBMR || !exerciseOptionVERYACTICE)){
                         result += "<h4>Hey " + yourName + ",</h4>";
                         result += "<p>Your MAINTENANCE calories would be... " + maleBMR + "</p>";
                         result += "<p>If you are trying to GAIN weight, then your total calories would be... " + (maleBMR + 700) + "</p>";
                         result += "<p>If you are trying to LOSE weight, then your total calories would be... " + (maleBMR - 800) + "-" + (maleBMR - 350) + "</p>";
-                    }else if(exerciseOptionVERYACTICE){
+                    }else if(exerciseOptionVERYACTICE && (!exerciseOptionLIGHTLYACTIVE || !exerciseOptionBMR || !exerciseOptionACTIVE)){
                         result += "<h4>Hey " + yourName + ",</h4>";
                         result += "<p>Your MAINTENANCE calories would be... " + maleBMR + "</p>";
                         result += "<p>If you are trying to GAIN weight, then your total calories would be... " + (maleBMR + 750) + "</p>";
@@ -296,6 +304,7 @@
       
             results.innerHTML = result;
         }
+    }
 
           </script>
 
